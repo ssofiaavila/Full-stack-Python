@@ -16,7 +16,7 @@ a{
   padding: 10px;
 }
 a:visited{
-  color:pink;
+  color:black;
 }
 a:hover{
   color:black;
@@ -36,7 +36,9 @@ p{
 }
 
 footer{
-  height: 100px;
+  height: 80px;
+  text-align: center;
+  padding-top: 20px
 }
 .titulo{
   font-size: 30px;
