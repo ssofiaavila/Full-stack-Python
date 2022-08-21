@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Feedback Sent</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/aa40c93c33.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <nav> 
+      <a class="nav" href="index.html"> Home </a>
+      <a class="nav" href="about.html"> Acerca de </a>
+      <a class="nav" href="contact.html"> Contacto </a>
+      <a class="nav" href="singin.html"> Registrese </a>
+      <a class="nav" href="ubication.html"> Sucursales </a>
+    </nav> 
+
+      <h1 class="nombre-emprendimiento"> La cocina de Juan </h1>
+  </header>
+
+<main> 
+
+<p align=center>&nbsp;</p>
+<h1>Esta es la información que ha sido enviada: </h1>
+
+<table border="1" align=center width="226">
+  <tr>
+    <th align="center">Form Field</th>
+    <th align="center">Field Value</th>
+  </tr>
+
+<script language="javascript">
+var args = location.search.substr(1).split('&');
+for (var i = 0; i < args.length; ++i) {
+  var parts = args[i].split('=');
+  if (parts != null) {
+    var field = parts[0];
+    var value = parts[1];
+    if (value == null) {
+      value = "null"
+    }
+    else {
+      value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+    }
+
+    document.writeln('<tr><td align="center">' + field + '</td>');
+    document.writeln('<td align="center">' + value + '</td></tr>');
+  }
+}
+</script>
+
+<noscript>
+<tr><td>
+<p>You need to turn on Javascript in your browser.</p>
+
+<p>In Microsoft Internet Explorer 4 or greater:</p>
+<ul>
+<li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
+<li>Click on the "Security" tab.</li>
+<li>Click on the "Custom Level" button. (In IE 4, select "Custom"
+and then click on "Settings...".)</li>
+<li>Under "Active scripting" make sure "Enable" is selected.</li>
+</ul>
+
+<p>In Netscape version 4 or greater:</p>
+<ul>
+<li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+<li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
+<li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
+<li>Click the <b>OK</b> button.</li>
+</ul>
+
+</td></tr>
+</noscript>
+
+</table>
+</main>
+<footer>
+  <a href="https://www.twitter.com/ssofiaavila" target="_blank"><i class="fa-brands fa-twitter" aria-hidden="true"> </i> </a>
+  <a href="https://github.com/ssofiaavila" target="_blank">  <i class="fa-brands fa-github" aria-hidden="true"> </i></a>
+  <a href="https://instagram.com/ssofiaavila" target="_blank"> <i class="fa-brands fa-instagram" aria-hidden="true"> </i></a>
+  <a href="https://open.spotify.com/user/sxfxx_?si=a742d3024cfc4ad4" target="_blank"> <i class="fa-brands fa-spotify" aria-hidden="true"> </i></a>
+ <p> Sofia Agostina Avila | 2022 </p>
+</footer>
+</body>
+</html>

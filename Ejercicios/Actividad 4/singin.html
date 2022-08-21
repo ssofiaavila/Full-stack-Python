@@ -31,49 +31,43 @@
     
     <main> 
       <h2> FORMULARIO DE REGISTRO </h2>
-
-      <div>
+      <form action= "show_data.html"> 
+      
           <label for="firstname"> Nombre: </label> <input type="text" name="Nombre" placeholder="Ingrese su nombre aquí"> 
           <label for="lastname"> Apellido: </label> <input type="text" name="Apellido" placeholder="Ingrese su apellido aquí"> 
-      </div>
-      <div>
+      
         <p> DIRECCIÓN </p>
         <label for="street"> Calle: </label> <input type="text" name="Calle" placeholder="Ingrese su calle aquí">
         <label for="streetNum"> Número: </label> <input type="text" name="Numero" placeholder="Ingrese el número">
         <label for="city"> Ciudad </label> <input type="text" name="Ciudad" placeholder="C.A.B.A"> 
-        <label for="zipcode"> Código postal: </label> <input type="text" name="Codigo postal" placeholder="Ingrese su código postal">
-      </div>
-      <div> 
-        <label for="phone"> Teléfono </label> <input type="text" name="Teléfono" placeholder="Ingrese su teléfono aquí">
-        <label for="birthdate"> Fecha nacimiento: </label> <input type="date" name="Fecha nacimiento" placeholder="dd/mm/aaaa"> 
+        <label for="zipcode"> Código postal: </label> <input type="text" name="Cod.postal" placeholder="Ingrese su código postal">
+      
+        <label for="phone"> Teléfono </label> <input type="text" name="Telefono" placeholder="Ingrese su teléfono aquí">
+        <label for="birthdate"> Fecha nacimiento: </label> <input type="date" name="Fecha-nacimiento" placeholder="dd/mm/aaaa"> <br>
         <label for="mail"> Mail: </label> <input type="text" name="Mail" placeholder="">
         <label for="password"> Clave: </label> <input type="password" name="Password">
-        <label for="link"> Link del tp 3: </label> <input type="text" name="tp">
-      </div>
-      <div>
+        <label for="link"> Link del tp 3: </label> <input type="text" name="Link-tp">
+    
         <p> GÉNERO
-          <input type="radio" name="genre" value="Hombre"> Hombre
-          <input type="radio" name="genre" value="Mujer"> Mujer
-          <input type="radio" name="genre" value="Otro"> Otro
+          <input type="radio" name="Genero" value="Hombre"> Hombre
+          <input type="radio" name="Genero" value="Mujer"> Mujer
+          <input type="radio" name="Genero" value="Otro"> Otro
         </p>
-      </div>
-      <div>
+     
         <p> CONOCIMIENTOS PREVIOS <br> 
-          <input type="checkbox" name="study"> HTML
-          <input type="checkbox" name="study"> CSS
-          <input type="checkbox" name="study"> Bootstrap
-          <input type="checkbox" name="study"> JavaScript
-          <input type="checkbox" name="study"> TypeScript
-          <input type="checkbox" name="study"> Angular
-          <input type="checkbox" name="study"> Base de datos
-          <input type="checkbox" name="study"> Python
-          <input type="checkbox" name="study"> Django
+          <input type="checkbox" name="Skill" value="HTML"> HTML
+          <input type="checkbox" name="Skill" value="CSS"> CSS
+          <input type="checkbox" name="Skill" value="Bootstrap"> Bootstrap
+          <input type="checkbox" name="Skill" value="JavaScript"> JavaScript
+          <input type="checkbox" name="Skill" value="TypeScript"> TypeScript
+          <input type="checkbox" name="Skill" value="Angular"> Angular
+          <input type="checkbox" name="Skill" value="BaseDeDatos"> Base de datos
+          <input type="checkbox" name="Skill" value="Python"> Python
+          <input type="checkbox" name="Skill" value="Django"> Django
         </p>
-      </div>
-
-      <div>
+      
         <p> ESTUDIOS </p>
-        <select class="comentario" name="estudios">
+        <select class="comentario" name="Estudio">
           <option value="Primario"> Primario </option>
           <option value="Secundario"> Secundario </option>
           <option value="Terciario incompleto"> Terciario incompleto </option>
@@ -83,13 +77,12 @@
           <option value="Posgrado incompleto"> Posgrado incompleto </option>
           <option value="Posgrado completo"> Posgrado completo </option>
         </select>
-      </div>
-      <div>
+     
         <p> COMENTARIO </p>
-        <textarea class= "comentario" name="comentarios" id="comentarios"> </textarea> <br> 
+        <textarea class= "comentario" name="Comentario" id="comentarios"> </textarea> <br> 
         <input class="comentario" type="submit" value="Enviar">
-      </div>
-
+      
+      </form>
 
 
      
