@@ -4,7 +4,15 @@
     <meta charset="utf-8">
     <title> Registrarse </title>
     <link rel="stylesheet" href="style.css">
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/aa40c93c33.js" crossorigin="anonymous"></script>
+
+ </head>
 
   <!-- pagina principal -->
   <body>
@@ -18,18 +26,18 @@
         <a class="nav" href="ubication.html"> Sucursales </a>
       </nav> 
 
-        <h1> La cocina de Juan </h1>
+        <h1 class="nombre-emprendimiento"> La cocina de Juan </h1>
     </header>
     
     <main> 
-      <h2> Formulario de registro </h2>
+      <h2> FORMULARIO DE REGISTRO </h2>
 
       <div>
           <label for="firstname"> Nombre: </label> <input type="text" name="Nombre" placeholder="Ingrese su nombre aquí"> 
           <label for="lastname"> Apellido: </label> <input type="text" name="Apellido" placeholder="Ingrese su apellido aquí"> 
       </div>
       <div>
-        <p> Direccion: </p>
+        <p> DIRECCIÓN </p>
         <label for="street"> Calle: </label> <input type="text" name="Calle" placeholder="Ingrese su calle aquí">
         <label for="streetNum"> Número: </label> <input type="text" name="Numero" placeholder="Ingrese el número">
         <label for="city"> Ciudad </label> <input type="text" name="Ciudad" placeholder="C.A.B.A"> 
@@ -43,14 +51,14 @@
         <label for="link"> Link del tp 3: </label> <input type="text" name="tp">
       </div>
       <div>
-        <p> Género
+        <p> GÉNERO
           <input type="radio" name="genre" value="Hombre"> Hombre
           <input type="radio" name="genre" value="Mujer"> Mujer
           <input type="radio" name="genre" value="Otro"> Otro
         </p>
       </div>
       <div>
-        <p> Conocimientos previos
+        <p> CONOCIMIENTOS PREVIOS <br> 
           <input type="checkbox" name="study"> HTML
           <input type="checkbox" name="study"> CSS
           <input type="checkbox" name="study"> Bootstrap
@@ -64,8 +72,8 @@
       </div>
 
       <div>
-        <p> Estudios </p>
-        <select name="estudios">
+        <p> ESTUDIOS </p>
+        <select class="comentario" name="estudios">
           <option value="Primario"> Primario </option>
           <option value="Secundario"> Secundario </option>
           <option value="Terciario incompleto"> Terciario incompleto </option>
@@ -77,9 +85,9 @@
         </select>
       </div>
       <div>
-        <p> Comentario </p>
-        <textarea name="comentarios" id="comentarios"> </textarea> <br> 
-        <input type="submit" value="Enviar">
+        <p> COMENTARIO </p>
+        <textarea class= "comentario" name="comentarios" id="comentarios"> </textarea> <br> 
+        <input class="comentario" type="submit" value="Enviar">
       </div>
 
 
