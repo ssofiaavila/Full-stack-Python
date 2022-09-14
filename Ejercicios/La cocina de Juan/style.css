@@ -98,3 +98,49 @@ label,input{
 h1{
     text-align: center;
 }
+
+main{
+   margin: 8%;
+   background-color: #EDDFB3;
+   padding: 10px
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400);
+form{
+  padding: 60px;
+  max-width: 400px;
+  background-color: #f6f0dd;
+  margin: 0 auto;
+}
+
+form input, form textarea{
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 15px;
+  box-sizing: border-box; 
+  border: none; 
+  color: #9b9274; 
+  font-size: 1em;
+  resize: none; 
+}
+
+form button {
+	display: block;
+	background-color: #EDDFB3;
+	padding: 10px 45px 10px 45px;
+	border: 0;
+	font-size: 1em; 
+	color: 	#f6f0dd;
+  font-family: "Roboto", sans-serif;
+}
+
+#cuadricula { 
+    
+    display: grid;   
+    grid-template-columns: 25% auto;   
+    grid-auto-flow: row; 
+    grid-gap: 5px;   
+  
+} 
