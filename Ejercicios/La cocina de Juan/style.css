@@ -137,10 +137,9 @@ form button {
 }
 
 #cuadricula { 
-    
-    display: grid;   
-    grid-template-columns: 25% auto;   
-    grid-auto-flow: row; 
-    grid-gap: 5px;   
   
-} 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-row: 10px;
+      }
