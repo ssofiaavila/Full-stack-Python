@@ -24,17 +24,10 @@ h1.nombre-emprendimiento{
 }
 
 
-/*.titulo{
-    color:white;
-    margin-bottom:0;
-    padding-bottom: 0;
-    padding-top: 20px;
-    font-family: 'Roboto', sans-serif;  
-}*/
 
 
-main{
-   
+
+main{  
     background-color: #565a5e;
     bottom: 0px;
       
@@ -46,6 +39,8 @@ main{
  .navbar{
     --bs-navbar-padding-y: 0;
 }
+
+
 
 .nav{    
 
