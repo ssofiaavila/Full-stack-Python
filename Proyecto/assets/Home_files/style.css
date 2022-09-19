@@ -30,8 +30,6 @@ h1.nombre-emprendimiento{
 main{  
     background-color: #565a5e;
     bottom: 0px;
-    height: 100%;
-
       
  }
 
@@ -52,14 +50,6 @@ main{
 #demo{
     height: 500px;
 
-}
-
-
-
-
-.aside{
-    text-align:center;
-    padding-top: 100%;
 }
 
 .nav{    
