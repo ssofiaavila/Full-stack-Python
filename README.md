@@ -1,5 +1,5 @@
 # Full-stack-Python
-Ejercicios del curso "Full stack Python" del programa #CodoACodo del gobierno de la Ciudad Autónoma de Buenos Aires, edición 2022
+Ejercicios del curso "Full stack Python" del programa #CodoACodo del gobierno de la Ciudad Autónoma de Buenos Aires, segundo cuatrimestre 2020 comisión 22529
 
 
 ## Contenido ##
