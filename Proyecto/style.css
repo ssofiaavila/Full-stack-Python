@@ -40,7 +40,13 @@ main{
     --bs-navbar-padding-y: 0;
 }
 
-
+.w-100 {
+    width: 900px!important;
+    height: 900px!important;
+}
+.carousel-indicators{
+    margin-bottom: 4rem!important;
+}
 
 .nav{    
 
