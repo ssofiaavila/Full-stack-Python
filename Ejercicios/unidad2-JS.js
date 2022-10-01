@@ -180,3 +180,139 @@ devuelva el último día del mes.*/
 function ultimoDiaDelMes(d,m,a){
     return diasPorMes(m);
 }
+
+
+/* 19- cree un array con todas las edades de los estudiantes de su
+clase. Itere el array utilizando un bucle while y luego imprima todas las
+edades en la consola.*/
+
+var dimL=0;
+let alumnos=[];
+// mientras no se lea la edad 0
+var nombre= prompt("Nombre de alumno");
+alumnos[dimL]= nombre;
+dimL++;
+while (nombre != 0){
+    var nombre= prompt("Nombre de alumno");
+    alumnos[dimL]= nombre;
+    dimL++;
+}
+var i=0;
+while (i < alumnos.length){
+    console.log(alumnos[i]);
+    i++
+}
+
+
+
+/* Al ejercicio 1 agregue un condicional dentro del ciclo while
+para imprimir solo números pares. Cambie el ciclo para usar un ciclo
+"for" en lugar de un ciclo "while".*/ 
+
+var dimL=0;
+let alumnos=[];
+// mientras no se lea la edad 0
+var nombre= prompt("Nombre de alumno");
+alumnos[dimL]= nombre;
+dimL++;
+while (nombre != 0){
+    var nombre= prompt("Nombre de alumno");
+    alumnos[dimL]= nombre;
+    dimL++;
+}
+
+for (var i=0; i< alumnos.length; i++){
+    if (alumnos[i] % 2 == 0)
+        console.log(alumnnos[i]);
+}
+
+/* 21- escriba una función que reciba un array como parámetro e
+imprima el número más bajo de la array en la consola.*/
+var numeros= [14,16,20,9,45,66];
+numero_minimo(numeros);
+
+function numero_minimo(numeros){
+    var min=5000;
+    for (var i=0; i< numeros.length; i++){
+        if (numeros[i] < min){
+            min=numeros[i];
+        }
+    }
+    return min;
+}
+
+/* 22-escriba una función que reciba un array como parámetro e
+imprima el número más grande de la array en la consola.*/
+var numeros= [14,16,20,9,45,66];
+numero_minimo(numeros);
+
+function numero_minimo(numeros){
+    var max=-1;
+    for (var i=0; i< numeros.length; i++){
+        if (numeros[i] > max){
+            max=numeros[i];
+        }
+    }
+    return max;
+}
+
+
+/* 23- Escriba una función que reciba dos parámetros, una array y
+un índice. La función imprimirá el valor del elemento en la posición
+dada (basado en uno) en la consola.*/
+
+function valor_indice(numeros,indice){
+    return numeros[indice];
+}
+
+
+/* 24- Escriba una función que reciba una array y solo imprima los
+valores que se repiten. */
+
+/* 25- escriba una función de JavaScript simple para unir todos los
+elementos de la siguiente array en una cadena*/
+function encadenar_string(elementos){
+    var rtdo;
+    for (var i = 0; i < elementos.length; i++){
+        rtdo= rtdo + elementos[i];
+    }
+    return rdto;
+}
+
+/* 26- escriba una función de JavaScript que invierta un número.
+Por ejemplo, si x = 32443, la salida debería ser 34423 */
+function invertir_numero(num){
+    const convertAndReverse = n.toString().split("").reverse().join("");
+    return Number(convertAndReverse);
+}
+
+/* 27- escriba una función de JavaScript que devuelva una cadena
+en orden alfabético */
+function cadnea_ordenada(cadena){
+    const cadenaComoArreglo = cadena.split("");
+    cadenaComoArreglo.sort();
+    const cadenaOrdenada = cadenaComoArreglo.join("");
+    return cadenaOrdenada;
+}
+
+/* 28- escriba una función de JavaScript que convierta la primera
+letra de cada palabra a mayúsculas*/ 
+function convertir_mayuscula(cadena){
+    const palabras = cadena.split(" ");
+    for (let i = 0; i < palabras.length; i++) {
+        palabras[i] = palabras[i][0].toUpperCase() + palabras[i].substr(1);
+    }
+}
+
+/* 29- escriba una función de JavaScript que busque la palabra
+más larga de una frase*/ 
+function palabra_mas_larga(oracion){
+    palabra_mas_grande = ""
+  palabras = oracion.replace(",", " ").split(" "); //replace usado para eliminar "," de las palabras.
+  palabras.forEach(function(palabra){
+  if (palabra.length > palabra_mas_grande.length){
+       palabra_mas_grande = palabra
+   };
+  });
+  return palabra_mas_grande
+}
