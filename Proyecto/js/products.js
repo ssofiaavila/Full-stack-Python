@@ -1,43 +1,82 @@
-var data=[
-    {codigo:"1",
-    imagen:"assets/Products/milanesas.jpg",
-    nombre:"Milanesas",
-    descripcion: "El típico plato argentino"
-    },
-    {codigo:"2",
-    imagen:"assets/Products/empanadas.jpg",
-    nombre:"Empanadas",
-    descripcion: "Más opciones si querés seguir conociendo la gastronomía argentina"
-    },
-    {codigo:"3",
-    imagen:"assets/Products/rabas.jpg",
-    nombre:"Rabas",
-    descripcion: "Una opción para quienes prefieran un plato proveniente del mar"
-    },
-    {codigo:"4",
-    imagen:"assets/Products/pizzas.jpg",
-    nombre:"Pizzas",
-    descripcion: "Para quienes deseen distrutar un toque italiano"
-    },
-    {codigo:"5",
-    imagen:"assets/Products/sushi.jpg",
-    nombre:"Sushi",
-    descripcion: "Contamos con una amplia variedad de sushi, desde opciones con atún, salmón y de verdura"
-    },
-    {codigo:"6",
-    imagen:"assets/Products/parrilla.jpg",
-    nombre:"Parrilla",
-    descripcion: "Encontrá todos los cortes de carnes en nuestra parrilla"
-    },
-    {codigo:"7",
-    imagen:"assets/Products/pasta.jpg",
-    nombre:"Pastas",
-    descripcion: "Continuamos con nuestro origen italiano"
-    },
-    {codigo:"8",
-    imagen:"assets/Products/ensaladas.jpg",
-    nombre:"Ensaladas",
-    descripcion: "Las mejores ensaladas para acompañar tus platos preferidos"
-    },
+/*
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
 
-]
+
+  <!-- the slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+*/
+
+if (document.getElementById("idCarousel")){
+    var cad=`
+    <ul class= "carousel-indicators">
+    <li> data-target="#demo" data-slite-to="0" class="active"></li> 
+    `
+    for (var i=1; i< data.length; i++){
+        cad+='<li data-target="#demo" data-slite-to="'+i+'"></li>'
+    }
+    cad+=` 
+    </ul>
+    `
+    cad+=`
+    <!-- the slideshow -->
+    <div class="carousel-inner">
+    `
+    for (var i=0; i< data.length; i++){
+        cad+=`div class="carousel-item `
+        if (i==0)
+            cad+=`active">`
+        else
+            cad+=`">`;
+
+        cad+=`
+            <img src="${data[i].imagen}" alt="${data[i].nombre}">
+            <div class="carousel-caption">
+                <h3> ${data[i].nombre}</h3>
+                <p> ${data[i].descripcion}</p>
+            </div>
+    </div>
+    `}
+    cad+=`
+    </div>
+    `
+    console.log(cad)
+    document.getElementById("idCarousel").innerHTML=cad;
+
+
+}
