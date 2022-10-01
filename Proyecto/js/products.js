@@ -43,26 +43,25 @@
 */
 
 if (document.getElementById("idCarousel")){
-    var cad=`
-    <ul class= "carousel-indicators">
-    <li> data-target="#demo" data-slite-to="0" class="active"></li> 
+    var cad=`<div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  </div>
     `
     for (var i=1; i< data.length; i++){
-        cad+='<li data-target="#demo" data-slite-to="'+i+'"></li>'
+        cad+='<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="'+i+'"></button>'
     }
     cad+=` 
-    </ul>
+  
     `
-    cad+=`
-    <!-- the slideshow -->
+    cad+=`  
     <div class="carousel-inner">
     `
     for (var i=0; i< data.length; i++){
-        cad+=`div class="carousel-item `
+        cad+=`<div class="carousel-item `
         if (i==0)
             cad+=`active">`
         else
-            cad+=`">`;
+            cad+=`>`;
 
         cad+=`
             <img src="${data[i].imagen}" alt="${data[i].nombre}">
