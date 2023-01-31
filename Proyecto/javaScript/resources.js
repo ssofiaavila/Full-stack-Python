@@ -1,5 +1,6 @@
 var element=`<nav class="nav-bar">
             <ul class="links">
+                <li> <a href="index.html">Home</a></li> 
                 <li> <a href="about.html">Acerca de</a></li> 
                 <li><a href="contact.html">Contacto</a></li> 
             </ul>           
