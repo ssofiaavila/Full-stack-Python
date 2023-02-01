@@ -3,6 +3,7 @@ var element=`<nav class="nav-bar">
                 <li> <a href="index.html">Home</a></li> 
                 <li> <a href="about.html">Acerca de</a></li> 
                 <li><a href="contact.html">Contacto</a></li> 
+                <li><a href="sucursales.html">Sucursales</a></li>
             </ul>           
         </nav>
         
