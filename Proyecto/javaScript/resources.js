@@ -12,6 +12,6 @@ var element=`<nav class="nav-bar">
 `
 document.getElementById('idHeader').innerHTML= element;
 
-element=`<h4> Derechos reservados @2023</h4>
+element=`<div class="footer"<h4> Derechos reservados @2023</h4> </div>
 `
 document.getElementById('idFooter').innerHTML= element;
