@@ -4,6 +4,15 @@
     margin:0;
     box-sizing: border-box;
 }
+.bussinessName{
+    color:#EEE9DA;
+    font-family: 'Roboto', sans-serif;
+    text-align:center;
+    font-size: 2em;
+    padding-top: 1em;
+}
+
+
 /* HEADER */
 .nav-bar{
     background-color: #93BFCF;
@@ -39,4 +48,9 @@
     background-color: #93BFCF;
     position:absolute;
     bottom:0;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    color:#EEE9DA;
+    font-family: 'Roboto', sans-serif;
 }
+

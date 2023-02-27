@@ -5,13 +5,14 @@ var element=`<nav class="nav-bar">
                 <li><a href="contact.html">Contacto</a></li> 
                 <li><a href="sucursales.html">Sucursales</a></li>
                 <li><a href="login.html"> Regístrese</a></li>
-            </ul>           
+            </ul>    
+            <h1 class="bussinessName">LA COCINA DE JUAN</h1>       
         </nav>
         
-        <h1>La cocina de Juan</h1>
+        
 `
 document.getElementById('idHeader').innerHTML= element;
 
-element=`<div class="footer"<h4> Derechos reservados @2023</h4> </div>
+element=`<div class="footer"<h4> Sofia Agostina Avila  @ 2023</h4> </div>
 `
 document.getElementById('idFooter').innerHTML= element;
