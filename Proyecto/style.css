@@ -1,56 +1,157 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-*{
-    margin:0;
+* {
+    margin: 0;
     box-sizing: border-box;
 }
-.bussinessName{
-    color:#EEE9DA;
+
+body {
+    background-color: #BDCDD6;
+}
+
+
+/* HEADER */
+.nav-bar {
+    background-color: #93BFCF;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.nav-bar .links {
+    grid-column: 4/7;
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-bar .links a {
+    text-decoration: none;
+    color: #EEE9DA;
+    font-size: 1.3em;
     font-family: 'Roboto', sans-serif;
-    text-align:center;
+}
+
+.bussinessName,
+h3,
+h2 {
+    color: #EEE9DA;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
     font-size: 2em;
     padding-top: 1em;
 }
 
 
-/* HEADER */
-.nav-bar{
-    background-color: #93BFCF;
-    padding-bottom: 1em;
-    padding-top:1em;
-    padding-left: 1em;
-    padding-right: 1em;    
+/* MAIN */
+.inicio {
+    justify-content: center !important;
+
 }
-.nav-bar .links{
-    grid-column: 4/7;
-    display: flex;
-    justify-content: space-around;
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    max-width: 700px;
 }
-.nav-bar .links li {
-    list-style: none;
-}
-.nav-bar .links a{
-    text-decoration: none;
-    color:#EEE9DA;
-    font-size: 1.3em;  
+
+#recipe {
+    color: #6096B4;
     font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    padding-left: 46%;
+    text-decoration: none;
+
+
 }
 
+/* RECETA.HTML */
+.receta {
+    justify-content: center !important;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.text,
+li {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 0.2em;    
+    padding: 0.2em;
+    text-align: center;
+}
+
+/* SUCURSALES.HTML */
 
 
+iframe {
+    height: 20em;
+    width: 20em;
+    padding-left: 1em;
+    padding-top:2em
+}
+
+/* LOGIN.HTML */
+.data{
+    display: flex;
+    padding: 1em;
+}
+.data p{
+    font-family: 'Roboto', sans-serif;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+input{
+    font-family: 'Roboto', sans-serif;
+    padding-left: 1em;  
+    padding-right: 1em;  
+
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;   
+}
+form {
+   
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .button {
+    background-color: #93BFCF; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+
+ 
 
 /* FOOTER */
-.footer{
-    width: 100%; 
-    display:flex;
-    height: 30px;  
-    justify-content:center;
+.footer {
+    width: 100%;
+    display: flex;
+    height: 30px;
+    justify-content: center;
     background-color: #93BFCF;
-    position:absolute;
-    bottom:0;
+    position: absolute;
+    bottom: 0;
     padding-top: 1em;
     padding-bottom: 2em;
-    color:#EEE9DA;
+    color: #EEE9DA;
     font-family: 'Roboto', sans-serif;
 }
-
