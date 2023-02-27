@@ -4,6 +4,7 @@ var element=`<nav class="nav-bar">
                 <li> <a href="about.html">Acerca de</a></li> 
                 <li><a href="contact.html">Contacto</a></li> 
                 <li><a href="sucursales.html">Sucursales</a></li>
+                <li><a href="login.html"> Regístrese</a></li>
             </ul>           
         </nav>
         
