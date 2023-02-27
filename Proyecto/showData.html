@@ -1,62 +1,60 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
-<title>Feedback Sent</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La cocina de Juan</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/assets/favico.png" type="">
 </head>
+
 <body>
-<p align=center>&nbsp;</p>
-<h1 align=center><font size="+1">The following information has been sent as your
-  feedback:</font></h1>
+  <header>
+    <header id="idHeader">
+    </header>
 
-<table border="1" align=center width="226">
-  <tr>
-    <th align="center">Form Field</th>
-    <th align="center">Field Value</th>
-  </tr>
+    <main>
+      <p align=center>&nbsp;</p>
+      <h3> Esta es la información que ha sido enviada
+      </h3>
 
-<script language="javascript">
-var args = location.search.substr(1).split('&');
-for (var i = 0; i < args.length; ++i) {
-  var parts = args[i].split('=');
-  if (parts != null) {
-    var field = parts[0];
-    var value = parts[1];
-    if (value == null) {
-      value = "null"
-    }
-    else {
-      value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
-    }
+      <table border="1" align=center width="226">
+        <tr>
+          <th align="center">Campo</th>
+          <th align="center">Dato enviado</th>
+        </tr>
 
-    document.writeln('<tr><td align="center">' + field + '</td>');
-    document.writeln('<td align="center">' + value + '</td></tr>');
-  }
-}
-</script>
+        <script language="javascript">
+          var args = location.search.substr(1).split('&');
+          for (var i = 0; i < args.length; ++i) {
+            var parts = args[i].split('=');
+            if (parts != null) {
+              var field = parts[0];
+              var value = parts[1];
+              if (value == null) {
+                value = "null"
+              }
+              else {
+                value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+              }
 
-<noscript>
-<tr><td>
-<p>You need to turn on Javascript in your browser.</p>
+              document.writeln('<tr><td align="center">' + field + '</td>');
+              document.writeln('<td align="center">' + value + '</td></tr>');
+            }
+          }
+        </script>
 
-<p>In Microsoft Internet Explorer 4 or greater:</p>
-<ul>
-<li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
-<li>Click on the "Security" tab.</li>
-<li>Click on the "Custom Level" button. (In IE 4, select "Custom"
-and then click on "Settings...".)</li>
-<li>Under "Active scripting" make sure "Enable" is selected.</li>
-</ul>
+       
 
-<p>In Netscape version 4 or greater:</p>
-<ul>
-<li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
-<li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
-<li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
-<li>Click the <b>OK</b> button.</li>
-</ul>
+      </table>
 
-</td></tr>
-</noscript>
-
-</table>
+    </main>
+    <footer>
+      <footer id="idFooter">
+      </footer>
+      <script src="javaScript/resources.js"></script>
 </body>
+
 </html>
