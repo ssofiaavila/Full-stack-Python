@@ -12,8 +12,7 @@ var element=`<nav class="nav-bar">
         
 `
 document.getElementById('idHeader').innerHTML= element;
-/*
+
 element=`<div class="footer"<h4> Sofia Agostina Avila  @ 2023</h4> </div>
 `
 document.getElementById('idFooter').innerHTML= element;
-*/

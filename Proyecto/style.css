@@ -38,6 +38,10 @@ li {
     font-family: 'Roboto', sans-serif;
 }
 
+.nav-bar .links a:hover{
+    color: #BDCDD6;
+}
+
 .bussinessName,
 h3,
 h2 {
@@ -99,13 +103,19 @@ iframe {
     padding-left: 1em;
     padding-top:2em
 }
+.iframes{
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding-bottom: 2em;
+}
 
 /* LOGIN.HTML */
 .data{
     display: flex;
     padding: 1em;
 }
-.data p{
+.data p, .receta p{
     font-family: 'Roboto', sans-serif;
     padding-left: 1em;
     padding-right: 1em;
@@ -127,10 +137,12 @@ form {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: #ffffff;
+
   }
 
   .button {
-    background-color: #93BFCF; /* Green */
+    background-color: #93BFCF; /* Celeste */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -140,6 +152,11 @@ form {
     font-size: 16px;
   }
 
+ 
+
+   
+    
+  
 
  
 
